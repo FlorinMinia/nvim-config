@@ -45,3 +45,6 @@ opt.splitbelow = true
 
 -- Sync with system clipboard
 opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
+
+-- Lines of context when scrolling
+opt.scrolloff = 10
