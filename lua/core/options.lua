@@ -43,3 +43,5 @@ opt.splitright = true
 -- Horizontal split window to the bottom
 opt.splitbelow = true
 
+-- Sync with system clipboard
+opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
