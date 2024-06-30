@@ -20,6 +20,8 @@ return {
 			["<leader>x"] = { name = "+Trouble" },
 			["<leader>w"] = { name = "+Workspace" },
 			["<leader>r"] = { name = "+LSP" },
+			["<leader>a"] = { name = "Harpoon" },
+			["<leader>u"] = { name = "Undotree" },
 		},
 	},
 	config = function(_, opts)
