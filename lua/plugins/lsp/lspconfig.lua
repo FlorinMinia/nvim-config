@@ -92,12 +92,28 @@ return {
 					filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
 				})
 			end,
+			["intelephense"] = function()
+				lspconfig["intelephense"].setup({
+					capabilities = capabilities,
+					filetypes = { "php", "blade" },
+					settings = {
+						intelephense = {
+							filetypes = { "php", "blade" },
+							files = {
+								associations = { "*.php", "*.blade.php" },
+								maxSize = 5000000,
+							},
+						},
+					},
+				})
+			end,
 			["emmet_ls"] = function()
 				-- configure emmet language server
 				lspconfig["emmet_ls"].setup({
 					capabilities = capabilities,
 					filetypes = {
 						"html",
+						"blade",
 						"typescriptreact",
 						"javascriptreact",
 						"css",
