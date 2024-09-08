@@ -25,4 +25,5 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
 
-
+-- Copy path of the relative file
+keymap.set("n", "<leader>cr", "<cmd>let @+=expand('%')<CR>", { desc = "Get relative path for the current buffer" })
